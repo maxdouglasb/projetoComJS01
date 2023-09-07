@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylo/style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <img class="logo" src="./assets/logo.gif" alt="logo do aplicativo">
+
+    <main>
+
+        <label>
+            Converter <b>de</b>
+            <select >
+                <option>R$ Real brasileiro</option>
+            </select>
+        </label>
+
+        <label>
+            Converter <b>para</b>
+            <select class="opcao">
+                <option value="dolar">US$ Dólar americano </option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra esterlina </option>
+                <option value="bitcoin">Bitcoin</option>
+            </select>
+        </label>
+
+        <label>
+            Valor
+            <input class="input-valor" type="number" placeholder="R$ 10.000,00">
+        </label>
+
+        <button class="conversao">Converter</button>
+
+        <section>
+            <div class="box">
+                <img src="./assets/real.png" alt="moeda de conversao">
+                <p class="moeda">Real</p>
+                <p class="valor">R$ 0,00</p>
+            </div>
+
+            <img class="seta" src="./assets/Vector.png" alt="seta">
+
+            <div class="box-2">
+                <img class="currency-img" src="./assets/dolar.png" alt="moeda de conversao">
+                <p class="moeda" id="currency-name">Dólar Americano</p>
+                <p class="valor-2">US$ 0,0</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="./srcipts.js"></script>
+
+</html>
